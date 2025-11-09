@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #d3a87c, #8b5e3c);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  color: #fff;
+}
+
+.brand {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff7e6;
+}
+
+.auth-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 35px 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  width: 280px;
+  color: #333;
+  margin: 0 auto;
+}
+
+.auth-box h2 {
+  color: #8b5e3c;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input:focus {
+  border-color: #8b5e3c;
+}
+
+button {
+  width: 90%;
+  padding: 10px;
+  background-color: #8b5e3c;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 8px;
+}
+
+button:hover {
+  background-color: #a36b44;
+}
+
+.switch {
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.switch a {
+  color: #8b5e3c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}
+
+
