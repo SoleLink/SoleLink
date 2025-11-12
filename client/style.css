@@ -343,7 +343,13 @@ main {
   border-radius: 8px;
   background: var(--accent-color);
   font-weight: 700;
-  cursor: not-allowed;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.chat-input button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
 }
 
 .chat-placeholder {
@@ -413,5 +419,126 @@ footer {
 
   .cta-btn {
     width: 100%;
+  }
+}
+
+/* ===== Auth Modal ===== */
+.auth-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.auth-modal-overlay .container {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.auth-modal-overlay .container .brand {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff7e6;
+}
+
+.auth-modal-overlay .container .auth-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 35px 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  width: 280px;
+  color: #333;
+  margin: 0 auto;
+}
+
+.auth-modal-overlay .container .auth-box h2 {
+  color: #63a9eb;
+  margin-bottom: 15px;
+}
+
+.auth-modal-overlay .container .auth-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.auth-modal-overlay .container .auth-box input:focus {
+  border-color: #63a9eb;
+}
+
+.auth-modal-overlay .container .auth-box button {
+  width: 90%;
+  padding: 10px;
+  background-color: #63a9eb;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 8px;
+}
+
+.auth-modal-overlay .container .auth-box button:hover {
+  background-color: #a36b44;
+}
+
+.auth-modal-overlay .container .auth-box .switch {
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.auth-modal-overlay .container .auth-box .switch a {
+  color: #63a9eb;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.auth-modal-overlay .container .auth-box .switch a:hover {
+  text-decoration: underline;
+}
+
+#message {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* User Info in Navbar */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-email {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .user-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .user-email {
+    font-size: 0.8rem;
   }
 }
