@@ -16,5 +16,5 @@ COPY client/ ./
 # NOTE: Cloud Run expects the application to listen on the port specified by the PORT environment variable.
 EXPOSE 3000
 
-# Run the development command, as requested
-CMD ["npm", "run", "dev"]
+# ... other Dockerfile lines ...
+CMD ["npm", "run", "dev", "--", "--port", "3000", "--host", "0.0.0.0"]
