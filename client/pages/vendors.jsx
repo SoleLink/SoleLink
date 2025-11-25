@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { auth, db } from "/firebase-auth-ui/firebaseConfig.js";
+import { auth, db } from "../firebase-auth-ui/firebaseConfig.js";
 import { collection, query, where, getDocs } from "firebase/firestore";
-import { getOrCreateChat } from "/src/services/chatService"; // Adjust path if needed
+import { getOrCreateChat } from "../src/services/chatService";
 
 export default function Vendors() {
   const [vendors, setVendors] = useState([]);

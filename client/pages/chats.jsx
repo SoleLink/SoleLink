@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "/firebase-auth-ui/firebaseConfig.js";
+import { auth } from "../firebase-auth-ui/firebaseConfig.js";
 import {
   subscribeToUserChats,
   subscribeToMessages,
@@ -9,7 +9,7 @@ import {
   markMessagesRead,
   setTyping,
   uploadChatFile,
-} from "/src/services/chatService";
+} from "../src/services/chatService";
 
 // Helper: format sticky date separators
 function formatDateLabel(date) {

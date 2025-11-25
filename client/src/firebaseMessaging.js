@@ -1,6 +1,6 @@
 // src/firebaseMessaging.js
 import { getMessaging, getToken, onMessage, isSupported } from "firebase/messaging";
-import { app } from "/firebase-auth-ui/firebaseConfig.js"; // adjust if your export is different
+import { app } from "../firebase-auth-ui/firebaseConfig.js"; // adjust if your export is different
 
 let messagingPromise = null;
 

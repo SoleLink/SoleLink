@@ -20,7 +20,7 @@ import {
   arrayUnion,
 } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
-import { db, storage } from "/firebase-auth-ui/firebaseConfig.js";
+import { db, storage } from "../../firebase-auth-ui/firebaseConfig.js";
 
 // -------------------------------------------------------------------
 // Internal: one-time migration flag per user to backfill participantIds

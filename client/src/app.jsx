@@ -1,14 +1,14 @@
 // client/src/app.jsx
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "/components/navbar";
-import Home from "/pages/home";
-import Vendors from "/pages/vendors";
-import ContactUs from "/pages/contactus";
-import Chats from "/pages/chats";
-import Profile from "/pages/profile";
-import Business from "/pages/Business";
-import { initFcm, onForegroundMessage } from "/src/fcm.js";
+import Navbar from "../components/navbar";
+import Home from "../pages/home";
+import Vendors from "../pages/vendors";
+import ContactUs from "../pages/contactus";
+import Chats from "../pages/chats";
+import Profile from "../pages/profile";
+import Business from "../pages/Business";
+import { initFcm, onForegroundMessage } from "./fcm.js";
 
 function App() {
   useEffect(() => {
@@ -38,6 +38,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/vendors" element={<Vendors />} />
+        <Route path="/Business" element={<Business />} />
         <Route path="/business" element={<Business />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/chats" element={<Chats />} />

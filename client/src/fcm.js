@@ -1,6 +1,6 @@
 // client/src/fcm.js
 import { getMessaging, getToken, onMessage, isSupported } from "firebase/messaging";
-import app from "/firebase-auth-ui/firebaseConfig.js"; // your existing config
+import app from "../firebase-auth-ui/firebaseConfig.js"; // your existing config
 
 // ⚠️ Replace this with your actual Web Push certificate key from Firebase console
 const VAPID_KEY = "BAVA1SdoUvcSktO51joeBNB2LBRlk8EhZZ9KdHU1v2NLjW5xUrcnppsoKtwjiDj2YoAgH5avXEyFCezrLJ5TWQs";
